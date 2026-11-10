@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Student Search</h2>
+
+<input type="text" id="name" placeholder="Enter student name">
+<button onclick="search()">Search</button>
+
+<p id="result"></p>
+
+<script>
+function search() {
+  let name = document.getElementById("name").value;
+
+  if (name == "Ganesh") {
+    document.getElementById("result").innerHTML =
+      "Student Found";
+  } else {
+    document.getElementById("result").innerHTML =
+      "Student Not Found";
+  }
+}
+</script>
+</body>
+</html>
